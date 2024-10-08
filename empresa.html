@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Manual da Empresa - Perguntas Frequentes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilização básica para mostrar os dados lado a lado */
+    
+        #resposta {
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo2.png" alt="Logo do Meu Site" class="logo">
+        <div class="botoes">
+            <div class="botao1">
+                <button onclick="window.location.href='index.html'">Manual de Processos</button>
+            </div>
+            <div class="botao2">
+                <button>Manual da Empresa</button>
+            </div>
+            <div class="botao3">
+                <button onclick="window.location.href='cliente.html'">Manual do Cliente</button>
+            </div>
+        </div>
+        <h1>Manual da Empresa</h1>
+
+        <!-- Dropdown para selecionar perguntas -->
+        <div>
+            <label for="areas">Selecione uma pergunta:</label>
+            <select id="areas" onchange="loadAnswer()">
+                <option value="">Selecione uma pergunta:</option>
+            </select>
+        </div>
+
+        <!-- Div para exibir a resposta -->
+        <div id="resposta" style="display: none;">
+            <h2>Resposta:</h2>
+            <p id="resposta-texto"></p>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

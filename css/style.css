@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c1c1c1;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.lateral {
+    background-color: #112e64;
+    width: 300px;
+    height: 100vh; /* Barra lateral ocupa toda a altura da janela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 700px;
+    margin-left: 300px; /* Espaçamento para o conteúdo não sobrepor a barra lateral */
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a4492;
+    font-size: 34px;
+}
+
+h2 {
+    color: #1a4492;
+}
+
+label {
+    font-weight: bold;
+    font-size: 22px;
+    color: #1a4492;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #1a4492;
+    appearance: none;
+    color: rgb(255, 255, 255);
+}
+
+.botoes button:hover {
+    background-color: #dedede;
+    color: #1a4492;
+    transition: 0.2s;
+}
+
+#detalhes {
+    margin-top: 20px;
+    color: #1a4492;
+}
+
+#detalhes-list {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+#detalhes-list li {
+    padding: 10px;
+    background-color: #1a4492;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#detalhes-list li:hover {
+    background-color: #112e64;
+}
+
+img {
+    width: 160px;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+#fluxograma-imagem {
+    width: 100%; 
+    max-width: 1000px; 
+    height: auto;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.botao1, .botao2, .botao3 {
+    width: 220px; /* Aumenta a largura dos botões */
+    padding: 20px; /* Aumenta o preenchimento interno dos botões, deixando-os mais altos */
+    font-size: 18px; /* Aumenta o tamanho da fonte dentro dos botões */
+    margin-bottom: 30px; /* Mais espaçamento entre os botões */
+}
+
+button {
+    background-color: #ffffff;
+    width: 200px;
+    height: 70px;
+    color: #1a4492;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #112e64;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Estilo para a tela de login */
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 576px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
